@@ -4,12 +4,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: rgba(52, 43, 59, 1);
     border-radius: 50%;
     cursor: pointer;
     transition-duration: .3s;
     border: none;
+    margin-right: 15px;
   }
   
   .bell {
@@ -67,8 +68,65 @@
 body{
     font-family: italic;
     background-image: url(img/MacBook\ Pro\ 16_\ -\ 2.png);
+    background-size:cover;
 }
 
-.text{
-    color: white;
+ .nav-link{
+  color: white;
+}
+
+.navbar-text{
+  color: white;
+}
+
+ .toptriangle{
+  margin-top: 400px;
+  text-align: center;
+ 
+}
+.toptriangle h1{
+  font-size: 80px;
+}
+.privitanya {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+
+}  
+
+.privitanya-h3{
+  width: 400px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.four-buttons{
+  margin-top: 100px;
+}
+
+.btn-color{
+  color: white;
+  background-color: #544660;
+  font-size: 30px;
+}
+
+.btn-color:hover{
+  background-color: #472c5f;
+}
+
+.four-buttons h3{
+  font-size: 40px;
+  text-align: center;
+}
+
+
+footer{
+  background-color: #342B3B;
+  margin-top: 50px;
+  color: white;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,168 +1,90 @@
 <!doctype html>
 <html lang="uk">
+
 <head>
-<!-- Голова: опис сторінки та підключення стилів -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Northern bank</title>
-<!-- Підключення CSS Bootstrap та шрифтів -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-crossorigin="anonymous">
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstr
+  <!-- Голова: опис сторінки та підключення стилів -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northern bank</title>
+  <!-- Підключення CSS Bootstrap та шрифтів -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstr
 ap-icons.min.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- Тіло: увесь вміст сторінки -->
-<header>
-  
+  <!-- Тіло: увесь вміст сторінки -->
+  <header>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid text">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid text">
+        <a class="navbar-brand" href="index.html"><img class='logo' src='img/image_1__2_-removebg-preview.png'
+            height="50px" alt='logo'></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item text">
+              <a class="nav-link" href="#">My card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <button class="button">
+            <svg viewBox="0 0 448 512" class="bell">
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z">
+              </path>
+            </svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item text">
-                <a class="nav-link" href="#"> my card</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">about us</a>
-              </li>
-            </ul>
-            <button class="button">
-              <svg viewBox="0 0 448 512" class="bell"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
-           </button>
-            <span class="navbar-text">
-              Northern Bank of Ukraine
-            </span>
-          </div>
+          <span class="navbar-text">
+            Northern Bank of Ukraine
+          </span>
         </div>
-      </nav>
-</header>
-<main class="container">
-  
-  <container>
-    <div class="toptriangle"> </div>
-    <h1>Northern Bank of Ukraine</h1>
-    <div class="strip"> </div>
-    <div class="strip2"> </div>
-  </container>
-  <container>
-    <div class="topstrip"> </div>
-    <div class="triangle1"> </div>
-    <div class="triangle2"> </div>
-    <h3>Welcome to the Northern Bank of Ukraine. The most convenient bank and the most profitable bank in Ukraine</h3>
-  </container>
-  <container>
-    <h2>Sing in/ sing up</h2>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
 
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </container>
-  <container>
-    <div class="d-grid gap-2">
-      <h3>sign up | sign in</h3>
-      <button class="btn btn-primary" type="button">click here</button>
-      <h3>how to get card?</h3>
-      <button class="btn btn-primary" type="button">click here</button>
-      <h3>about us</h3>
-      <button class="btn btn-primary" type="button">click here</button>
-    </div>
-  </container>
-    <container>
-      <h2> How do I can get card?</h2>
-      <p>Please enter your deteils here:</p>
-      <container>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Phone number</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your phone number with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">City</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Post Office</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </container>
-      <div></div>
-    </container>
-    <container>
-      <h2>About us</h2>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/0379_638158050789922982.jpg" class="d-block w-100" alt="">
-          </div>
-          <div class="carousel-item">
-            <img src="img/images.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/unnamed.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <p></p>
-    </container>
-    <div class="col">
-      <img src="img/screen-post-LJUaTzKtFNc-unsplash.jpg" class="img-fluid">
+    <div class="toptriangle">
+      <h1><b>Northern Bank of Ukraine</b></h1>
     </div>
 
-</main>
-<footer>
-<p>we don`t have sponsors, so if you want to be our sponsor you can send a proposal to auothor of this project - @vjkang </p>
-</footer>
-<!-- Підключення JS-файлу Bootstrap-->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
-<script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+    <div class="privitanya">
+    <h3 class="privitanya-h3">Welcome to the Northern Bank of Ukraine. The most convenient bank and the most profitable bank in Ukraine</h3>
+  </div>
+  <section class="four-buttons">
+    <container>
+      <div class="d-grid gap-2">
+        <h3>sign up | sign in</h3>
+        <button class="btn btn-primary btn-color" type="button">click here</button>
+        <h3>how to get card?</h3>
+        <button class="btn btn-primary btn-color" type="button">click here</button>
+        <h3>about us</h3>
+        <button class="btn btn-primary btn-color" type="button">click here</button>
+      </div>
+    </container>
+  </section>
+
+  </main>
+  <footer>
+    <p>we don`t have sponsors, so if you want to be our sponsor you can send a proposal to auothor of this project -
+      @vjkang </p>
+  </footer>
+  <!-- Підключення JS-файлу Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
