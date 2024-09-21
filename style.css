@@ -102,12 +102,22 @@ body{
 
 .four-buttons{
   margin-top: 100px;
+  margin-left: 5px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .btn-color{
   color: white;
   background-color: #544660;
   font-size: 30px;
+  border: #544660;
+  width: 1250px;
+ 
+ 
 }
 
 .btn-color:hover{
