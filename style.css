@@ -67,8 +67,8 @@
 
 body{
     font-family: italic;
-    background-image: url(img/MacBook\ Pro\ 16_\ -\ 2.png);
-    background-size:cover;
+     background-image: url(img/MacBook\ Pro\ 16_\ -\ 2.png);
+    background-size:cover; 
 }
 
  .nav-link{
@@ -162,8 +162,4 @@ footer{
 #themeToggle:active {
   transform: scale(0.9);
   transition-duration: .2s;
-}
-
-body .dark{
-  background-color: aqua;
 }

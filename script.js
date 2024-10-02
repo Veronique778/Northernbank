@@ -24,22 +24,26 @@ aboutus2.addEventListener("click", function() {
     window.location.assign('aboutus.html');
 });
 
+
+
 function change_theme() {
-    let body = document.querySelector('body')
-    // Тут умовний оператор
-    if (current_background == 'url(img/MacBook Pro 16_ - 1 (1).png)') {
-      current_background = 'url(img/MacBook Pro 16_ - 2.png)'
-  } else {
-      current_background = 'url(img/MacBook Pro 16_ - 1 (1).png)'
-  }
-  header.style.background = current_background
-  header.style.backgroundSize = 'cover'
+    let body = document.querySelector('body'); 
+    let currentTheme = body.getAttribute('data-theme'); 
+
+    if (currentTheme === 'light') {
+        body.style.backgroundImage = 'url("img/MacBook Pro 16_ - 2.png")';
+        changeThemeButton.innerHTML = '<i class="bi bi-moon"></i>'; 
+        body.setAttribute('data-theme', 'dark'); 
+    } else {
+        body.style.backgroundImage = 'url("img/MacBook Pro 16_ - 1 (1).png")';
+        changeThemeButton.innerHTML = '<i class="bi bi-brightness-high"></i>'; 
+        body.setAttribute('data-theme', 'light'); 
+    }
+
+    body.style.backgroundSize = 'cover';
 }
 
+let changeThemeButton = document.querySelector("#themeToggle");
+changeThemeButton.addEventListener('click', change_theme);
 
-
-let change_theme_button =  document.querySelector("#themeToggle")
-let current_background = 'url(img/MacBook Pro 16_ - 2.png)'
-change_theme_button.addEventListener('click', change_theme)
-
-
+document.querySelector('body').setAttribute('data-theme', 'light');
